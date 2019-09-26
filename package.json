@@ -1,0 +1,19 @@
+{
+  "name": "cordova-plugin-apple-login",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "People Software Corporation",
+  "keywords": [
+    "sign in with apple"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pscsrv/cordova-plugin-apple-login.git"
+  },
+  "homepage": "https://github.com/pscsrv/cordova-plugin-apple-login",
+  "license": "MIT"
+}

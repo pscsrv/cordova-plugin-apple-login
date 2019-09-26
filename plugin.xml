@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-apple-login" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>cordova-plugin-apple-login</name>
+
+  <js-module name="SignInWithApple" src="www/sign-in-with-apple.js">
+    <clobbers target="SignInWithApple" />
+  </js-module>
+
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="SignInWithApple">
+        <param name="ios-package" value="SignInWithApple" />
+      </feature>
+    </config-file>
+
+    <config-file target="*-Debug.plist" parent="com.apple.developer.applesignin">
+      <array>
+        <string>Default</string>
+      </array>
+    </config-file>
+    <config-file target="*-Release.plist" parent="com.apple.developer.applesignin">
+      <array>
+        <string>Default</string>
+      </array>
+    </config-file>
+
+    <header-file src="src/ios/SignInWithApple.h" />
+    <source-file src="src/ios/SignInWithApple.m" />
+
+    <header-file src="src/ios/SIWAConverters.h" />
+    <source-file src="src/ios/SIWAConverters.m" />
+  </platform>
+</plugin>
