@@ -23,6 +23,11 @@
         <string>Default</string>
       </array>
     </config-file>
+    <config-file target="*.entitlements" parent="com.apple.developer.applesignin">
+      <array>
+        <string>Default</string>
+      </array>
+    </config-file>
 
     <header-file src="src/ios/SignInWithApple.h" />
     <source-file src="src/ios/SignInWithApple.m" />
