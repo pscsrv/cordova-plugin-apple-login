@@ -26,7 +26,7 @@ id SIWANullIfNil(id value)
 
 + (ASAuthorizationScope)convertScope: (NSNumber *)scope
 {
-    switch (scope.integerValue) {
+    switch (scope.intValue) {
         case 0:
             return ASAuthorizationScopeFullName;
         case 1:
@@ -38,7 +38,7 @@ id SIWANullIfNil(id value)
 
 + (ASAuthorizationOpenIDOperation)convertOperation: (NSNumber *)operation
 {
-    switch (operation.integerValue) {
+    switch (operation.intValue) {
         case 0:
             return ASAuthorizationOperationImplicit;
         case 1:
